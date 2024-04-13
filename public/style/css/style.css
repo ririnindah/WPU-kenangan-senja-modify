@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgb(1, 1, 1);
     border-bottom: 1px solid #523d27;
     position: fixed;
     top: 0;
@@ -80,6 +80,39 @@ body {
 
 .navbar .navbar-extra a:hover {
     color: var(--primary);
+}
+
+/* navbar serach form */
+.navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 40rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.navbar .search-form.active {
+    transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    color: var(--bg);
+    padding: 1rem;
+}
+
+.navbar .search-form label {
+    cursor: pointer;
+    margin-right: 1.5rem;
+    color: var(--bg);
 }
 
 #hamburger-menu {
@@ -156,14 +189,16 @@ body {
 .about,
 .menu,
 .content,
-.contact {
+.contact,
+.products {
     padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
 .content h2,
-.contact h2 {
+.contact h2,
+.products h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
@@ -172,7 +207,8 @@ body {
 .about h2 span,
 .menu h2 span,
 .content h2 span,
-.contact h2 span {
+.contact h2 span,
+.products h2 span {
     color: var(--primary);
 }
 
@@ -207,13 +243,15 @@ body {
 }
 
 .menu h2,
-.contact h2 {
+.contact h2,
+.products h2 {
     margin-bottom: 1rem;
 }
 
 /* Menu Section */
 .menu p,
-.contact p {
+.contact p,
+.products p {
     text-align: center;
     max-width: 30rem;
     margin: auto;
@@ -241,6 +279,81 @@ body {
 .menu .row .menu-card .menu-card-tittle {
     margin: 1rem auto 0.5rem;
 }
+
+/* product section */
+.products .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.products .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.products .product-icon {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.products .product-icon a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product-icon a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.products .product-img {
+    padding: 0.5rem 0;
+}
+
+.products .product-img img {
+    height: 15rem;
+    width: auto;
+}
+
+.products .product-content {
+    font-size: 1.1rem;
+}
+
+.products .product-star {
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    color: var(--primary);
+    fill: var(--primary);
+}
+
+.products .product-star .star {
+    fill: var(--primary);
+}
+
+.products .product-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.products .product-price span {
+    text-decoration: line-through !important;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+
+
 
 /* contact section */
 .contact .row {
@@ -410,6 +523,10 @@ footer .credit a {
         font-size: 1.2rem;
     }
 
+    .menu .row {
+        flex-wrap: wrap;
+    }
+
     .contact .row {
         flex-wrap: wrap;
         height: auto;
@@ -417,6 +534,10 @@ footer .credit a {
 
     .contact form {
         height: 30rem;
+    }
+
+    .navbar .search-form {
+        width: 30rem;
     }
 }
 

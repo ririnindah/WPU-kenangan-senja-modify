@@ -68,6 +68,117 @@
     </div>
 </section>
 
+
+{{-- PRODUCTS SECTION --}}
+<section class="products" id="products">
+    <h2><span>Produk Unggulan </span> Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia fugit nisi nulla. Adipisci, ducimus.</p>
+
+    <div class="row">
+        <div class="product-card">
+            <div class="product-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-img">
+                <img src="{{ asset('img/product/product1.jpg') }}" alt="Biji Kopi">
+            </div>
+            <div class="product-content">
+                <h3>Coffee Beans Americano</h3>
+                <div class="product-star">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                </div>
+                <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-img">
+                <img src="{{ asset('img/product/product1.jpg') }}" alt="Biji Kopi">
+            </div>
+            <div class="product-content">
+                <h3>Coffee Beans Americano</h3>
+                <div class="product-star">
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                </div>
+                <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-img">
+                <img src="{{ asset('img/product/product1.jpg') }}" alt="Biji Kopi">
+            </div>
+            <div class="product-content">
+                <h3>Coffee Beans Americano</h3>
+                <div class="product-star">
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                </div>
+                <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-img">
+                <img src="{{ asset('img/product/product1.jpg') }}" alt="Biji Kopi">
+            </div>
+            <div class="product-content">
+                <h3>Coffee Beans Americano</h3>
+                <div class="product-star">
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                </div>
+                <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-img">
+                <img src="{{ asset('img/product/product1.jpg') }}" alt="Biji Kopi">
+            </div>
+            <div class="product-content">
+                <h3>Coffee Beans Americano</h3>
+                <div class="product-star">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                </div>
+                <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 {{-- CONTACT SECTIOJN --}}
 <section class="contact font" id="contact">
     <h2><span>Kontak</span> Kami</h2>
